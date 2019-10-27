@@ -5,23 +5,21 @@ This is a quiz app for Russian teenagers. Model of famous exams, so called "ОГ
 
 ------------
 ### Get started
-.
--├── eclipse-workspace
--├── images
--├── patterns
--├── product
--└── README.md
 
 1. Download [Java](https://www.java.com/en/download/ "Java")
 2. Donload project repository
-3. Open folder "product"( all the rest, if it's not interesting for you, can be deleted )
+3. Open folder `product` ( all the rest, if it is not interesting for you, can be deleted )
 4. Run `Godfather.jar`
 
 ------------
+### Additional info
+###### release version 1.0
+- The 11th grade now is not working. 
+- Instruction you can find in `product` folder
 
 ### Developer
 [Sergei Ring](https://www.instagram.com/illegal.bamboo/ "`Sergei Ring`")
 
 By **Bamboo inc.**
 
-![](http://prman.pythonanywhere.com/static/images/Bamboo.png)
+![](http://prman.pythonanywhere.com/static/images/Bamboo300x300.png)
