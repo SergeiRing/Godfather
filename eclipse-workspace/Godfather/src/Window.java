@@ -54,6 +54,7 @@ public class Window extends JFrame{
 	static Task1Page task1;
 	static Task2Page task2;
 	static Task3Page task3;
+	static Task1Page_11 task1_11;
 	static CountDown countDown;
 	static AdminPanel adminPanel;
 	static String DATABASE_NAME = "";
@@ -95,6 +96,7 @@ public class Window extends JFrame{
 	    task1 = new Task1Page(window, contentPane);
 	    task2 = new Task2Page(window, contentPane);
 	    task3 = new Task3Page(window, contentPane);
+	    task1_11 = new Task1Page_11(window, contentPane);
 	    countDown = new CountDown(window, contentPane);
 	    adminPanel = new AdminPanel(window, contentPane);
 	        
@@ -103,6 +105,7 @@ public class Window extends JFrame{
 	    contentPane.add(task1, "Task 1 page");
 	    contentPane.add(task2, "Task 2 page");
 	    contentPane.add(task3, "Task 3 page");
+	    contentPane.add(task1_11, "Task 1_11 page");
 	    contentPane.add(countDown, "Count Down page");
 	    contentPane.add(adminPanel, "Admin panel page");	
 
@@ -469,10 +472,10 @@ class MainPage extends JPanel{
 		button.setBounds((width/12)*8-50, (height/4)*2, 98, 183);
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				/*window.DATABASE_NAME = "grade11";
+				window.DATABASE_NAME = "grade11";
 				window.allVariants.reload(window, contentPane);
                 CardLayout cardLayout = (CardLayout) contentPane.getLayout();
-                cardLayout.next(contentPane);*/
+                cardLayout.next(contentPane);
 			}
 		});
 		panel_1.add(button);
@@ -1200,7 +1203,7 @@ class Task1Page_11 extends JPanel{
 		splitPane_2.setOrientation(JSplitPane.VERTICAL_SPLIT);
 		this.add(splitPane_2, BorderLayout.CENTER);
 		
-		JLabel TaskLabel = new JLabel("<html> Task 1. You are going to read the text aloud. You have 1.5 minutes to read text silently, and then be ready to read it aloud. Remember that you will not have more than 2 minutes for reading aloud.</html>");
+		JLabel TaskLabel = new JLabel("<html> Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.</html>");
 		TaskLabel.setVerticalAlignment(SwingConstants.TOP);
 		TaskLabel.setBorder(new MatteBorder(0, 5, 0, 0, (Color) new Color(26,49,68)));
 		TaskLabel.setFont(new Font("Arial", Font.BOLD, window.fontSize()));
