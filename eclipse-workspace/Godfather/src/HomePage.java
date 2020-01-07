@@ -11,15 +11,15 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
 
-class MainPage extends Page{
+class HomePage extends Page{
 		
-	public MainPage(int width, int height, ScreenManager screenManager) {
+	public HomePage(int width, int height, ScreenManager screenManager, String absolute_path) {
 		super(width, height);
 		
 		JButton LogoLabel = new JButton("godfather");
 		LogoLabel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				screenManager.getPage("admin panel");
+				screenManager.showPage("admin");
 			}
 		});
 		LogoLabel.setForeground(new Color(0,44,72));
@@ -50,7 +50,7 @@ class MainPage extends Page{
 		
 		JLabel lblNewLabel_3 = new JLabel();
 		lblNewLabel_3.setRequestFocusEnabled(false);
-		lblNewLabel_3.setIcon(new ImageIcon(screenManager.ABSOLUTE_PATH + "/images/bluepill1.png"));
+		lblNewLabel_3.setIcon(new ImageIcon(absolute_path + "/images/bluepill1.png"));
 		lblNewLabel_3.setBounds((width/12)*8-30, (height/4)*2, 65, 62);
 		panel_1.add(lblNewLabel_3);
 		
@@ -58,7 +58,7 @@ class MainPage extends Page{
 		lblNewLabel_2.setRequestFocusEnabled(false);
 		lblNewLabel_2.setBounds((width/12)*4-10, (height/4)*2, 65, 62);
 		panel_1.add(lblNewLabel_2);
-		lblNewLabel_2.setIcon(new ImageIcon(screenManager.ABSOLUTE_PATH + "/images/redpill1.png"));
+		lblNewLabel_2.setIcon(new ImageIcon(absolute_path + "/images/redpill1.png"));
 		
 		JButton button = new JButton("11");
 		button.setContentAreaFilled(false);
@@ -108,12 +108,12 @@ class MainPage extends Page{
 		panel_1.add(btnNewButton);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon(screenManager.ABSOLUTE_PATH + "/images/left_hand.png"));
+		lblNewLabel_4.setIcon(new ImageIcon(absolute_path + "/images/left_hand.png"));
 		lblNewLabel_4.setBounds((width/12)*4-90, (height/4)-80, 293, 357);
 		panel_1.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("");
-		lblNewLabel_5.setIcon(new ImageIcon(screenManager.ABSOLUTE_PATH + "/images/right_hand.png"));
+		lblNewLabel_5.setIcon(new ImageIcon(absolute_path + "/images/right_hand.png"));
 		lblNewLabel_5.setBounds((width/12)*8-150, (height/4)-80, 264, 357);
 		panel_1.add(lblNewLabel_5);
 		
